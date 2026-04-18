@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ponto turístico Castelo do Piauí</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top">
+    <img src="cdp.png" alt="Brasão Castelo do Piauí">
+    <h1>CASTELO DO PIAUÍ</h1>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      
+      <div class="info" onclick="abrirTela(0)">
+        <h2>Pedra do Castelo</h2>
+        <img src="imagem3.jpg" class="pontos-img" alt="Imagem Pedra do Castelo">
+        <p>
+         A Pedra do Castelo é o maior símbolo turístico da região, apresentando uma formação rochosa que remete a um castelo medieval no meio do sertão. Com cerca de 20 metros de altura, o local encanta pelos seus salões internos e grutas esculpidas naturalmente pelo tempo. É um ponto obrigatório para quem busca entender as origens geológicas do Piauí e admirar as belas pinturas rupestres locais. O clima no interior das rochas é sempre fresco, oferecendo um refúgio agradável mesmo nos dias mais quentes do ano. Visitar este monumento é como voltar no tempo e sentir a força da natureza esculpindo todo o horizonte de Castelo.
+        </p>
+      </div>
+      
+      <div class="info" onclick="abrirTela(1)">
+        <h2>Canio do Rio poti</h2>
+        <img src="imagem4.jpg" class="pontos-img" alt="Imagem Canio do Rio Poti">
+        <p>
+          O Cânion do Rio Poti é um espetáculo da natureza escondido entre paredões de rocha que chegam a 60 metros de altura em sua extensão. O rio serpenteia por entre as fendas, criando um cenário de beleza rústica e imponente que atrai diversos aventureiros de longe. Durante o passeio de barco, é possível observar as marcas deixadas pela água nas pedras ao longo de muitos milênios de história. A fauna local se faz presente com aves raras que sobrevoam os paredões, tornando a experiência ainda mais imersiva e natural. É um lugar que transmite paz e magnitude, ideal para quem deseja se desconectar e mergulhar no coração piauiense.
+        </p>
+      </div>
+      
+      <div class="info" onclick="abrirTela(2)">
+        <h2>Cachoeira das Arraias</h2>
+        <img src="imagem2.jpg" class="pontos-img" alt="Imagem Cachoeira das Arraias">
+        <p>
+          A Cachoeira das Arraias é um verdadeiro oásis para quem busca se refrescar e aproveitar o melhor das águas em Castelo do Piauí. Com uma queda d'água volumosa e cercada por vegetação preservada, o local oferece piscinas naturais perfeitas para um banho calmo. O som da água caindo nas pedras cria uma trilha sonora relaxante que atrai turistas durante todo o período de cheia dos rios. Além do banho, as trilhas ao redor permitem observar a flora típica da caatinga e encontrar mirantes com vistas privilegiadas. A energia do lugar é contagiante, transformando qualquer passeio simples em uma memória inesquecível para os visitantes.
+        </p>
+      </div>
+      
+      <div class="info" onclick="abrirTela(3)">
+        <h2>Picos dos André</h2>
+        <img src="imagem1.jpg" class="pontos-img" alt="Imagem Picos dos André">
+        <p>
+            Os Picos dos André representam uma das formações mais curiosas da nossa terra, com aglomerados de rochas que desafiam a gravidade. Do topo desses picos, é possível ter uma visão panorâmica em 360 graus de toda a beleza do sertão, sendo o lugar ideal para o pôr do sol. As trilhas que levam até o local passam por áreas de preservação onde a natureza se mantém totalmente intocada e cheia de vida. É um destino muito procurado por praticantes de trekking e fotografia devido às formas exóticas que as pedras assumem. Visitar os Picos é sentir a imensidão do mundo e a beleza singular que só o interior de Castelo possui.
+
+        </p>
+      </div>
+      
+    </div>
+    
+    <div class="tela" id="tela">
+      <div class="tela-content">
+        <sapn onclick="fecharTela()" class="fechar">X</sapn>
+        <h3 id="telaName"></h3>
+        <img src="" id="telaImg" class="tela-img">
+        <p id="telaLoc"></p>
+        <p id="telaDesc"></p>
+      </div>
+    </div>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
