@@ -140,6 +140,7 @@ img {
     color: var(--fechar-color);
     position: sticky;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .tela-content h3 {
