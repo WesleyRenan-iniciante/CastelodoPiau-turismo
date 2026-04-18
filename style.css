@@ -45,6 +45,14 @@ img {
     animation: sumir 3s ease-in-out;
 }
 
+.creditos-p {
+    opacity: 0.8;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+
 .info {
     background: var(--info-color);
     color: var(--branco-color);
@@ -65,7 +73,7 @@ img {
 
 .info:active {
     transform: translateY(6px) scale(0.95);
-    box-shadow: 0 8px 14px var(--box-color);
+    box-shadow: 0 8px 14px var(--infoborder-color);
 }
 
 .info h2 {
@@ -85,11 +93,11 @@ img {
     height: 65%;
 }
 
-.info p {
+.info-p {
     font-family: Arial;
     font-size: 15px;
     height: 190px;
-    line-height: 1.9;
+    line-height: 1.8;
     margin-bottom: 10px;
     
     display: -webkit-box;
