@@ -72,7 +72,12 @@ img {
 }
 
 .info:active {
-    transform: translateY(6px) scale(0.95);
+    transform: translateY(6px) scale(0.85);
+    box-shadow: 0 8px 14px var(--infoborder-color);
+}
+
+.info:hover {
+    transform: translateY(6px) scale(0.86);
     box-shadow: 0 8px 14px var(--infoborder-color);
 }
 
@@ -162,6 +167,45 @@ img {
 
 .sair {
     animation: sair 1s ease-out;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    border: 2px outset var(--box-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    color: #000;
+    font-weight: bold;
+    margin: 5px;
+    animation: aparece 3s ease-in-out;
+    cursor: pointer;
+}
+
+.con-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav a:active {
+    transform: translateY(5px) scale(0.9);
+    box-shadow: 0 12px 6px var(--box-color);
+}
+
+nav a:hover {
+    transform: translateY(5px) scale(0.9);
+    box-shadow: 0 12px 6px var(--box-color);
 }
 
 @keyframes sumir {
