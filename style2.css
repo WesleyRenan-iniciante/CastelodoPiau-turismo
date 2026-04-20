@@ -50,7 +50,7 @@ header img {
     color: #fff;
     font-size: 12px;
     text-align: center;
-    margin: 5px 0;
+    margin: 15px
 }
 
 .info {
@@ -156,6 +156,8 @@ button {
     padding: 8px 10px;
     font-size: 20px;
     transition: 0.3s ease-in-out;
+    border: none;
+    border-radius: 5px;
 }
 
 button:active {
