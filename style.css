@@ -179,15 +179,13 @@ img {
     animation: sair 1s ease-out;
 }
 
-
-
 .icon {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     padding: 10px;
     
     position: absolute !important;
