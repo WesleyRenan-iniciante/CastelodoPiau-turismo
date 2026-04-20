@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+:root {
+    --header-color: #FFFAFA;
+    --box-color: #000000;
+    --branco-color: #ffffff;
+    --corfundo-color: #1a1a1a;
+    --info-color: #121212;
+    --infoborder-color: #fff;
+    --fechar-color: #ff4d4d;
+    --tela-color: #1e1e1e;
+}
+
+
+body {
+    font-size: 15pt;
+    background: var(--corfundo-color);
+}
+
+header {
+    background: var(--header-color);
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    color: var(--tela-color);
+    font-size: 35px;
+    animation: aparece 3s ease-in-out;
+}
+
+img {
+    width: 115px;
+    animation: sumir 3s ease-in-out;
+}
+
+.creditos-p {
+    opacity: 0.8;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.info {
+    background: var(--info-color);
+    color: var(--branco-color);
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 2px outset var(--infoborder-color);
+    width: 100%;
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: sumir 3s ease-in-out;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.info h2 {
+    font-size: 22px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pontos-img {
+    width: 100%;
+    height: 75%;
+}
+
+.info-p {
+    font-family: Arial;
+    font-size: 15px;
+    height: 190px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    border: 2px outset var(--box-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    color: #000;
+    font-weight: bold;
+    margin: 5px;
+    animation: aparece 3s ease-in-out;
+    cursor: pointer;
+}
+
+.con-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav a:active {
+    transform: translateY(5px) scale(0.9);
+    box-shadow: 0 12px 6px var(--box-color);
+}
+
+nav a:hover {
+    transform: translateY(5px) scale(0.9);
+    box-shadow: 0 12px 6px var(--box-color);
+}
+
+.co {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 10px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+button:active {
+    transform: translateY(3px) scale(0.9);
+    box-shadow: 0 10px 12px var(--infoborder-color);
+}
+
+button:hover {
+    transform: translateY(3px) scale(0.9);
+    box-shadow: 0 10px 12px var(--infoborder-color);
+}
+
+@keyframes sumir {
+    0% {transform: translateX(20px); opacity: 0;}
+    50% {transform: translateX(-10px); opacity: 1;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes aparece {
+    0% {transform: translateY(-10px); opacity: 0;}
+    50% {
+        transform: translateY(5px); 
+        opacity: 0.5;}
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sair {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 0.1;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes abrir {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes nino {
+    0% {transform: translateY(-15px) scale(0.9); opacity: 0;}
+    50% {transform: translateY(8px) scale(1); opacity: 0.5;}
+    100% {transform: translateY(0); opacity: 1;}
+}
