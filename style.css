@@ -104,19 +104,18 @@ img {
 
 .pontos-img {
     width: 100%;
-    height: 50%;
-    
+    height: 65%;
 }
 
 .info-p {
     font-family: Arial;
     font-size: 15px;
     height: 195px;
-    line-height: 1.9;
+    line-height: 1.8;
     margin-bottom: 10px;
     
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
