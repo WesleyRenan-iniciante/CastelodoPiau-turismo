@@ -12,10 +12,14 @@
     --tela-color: #1e1e1e;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     font-size: 15pt;
     background: var(--corfundo-color);
+    overflow-y: scroll;
 }
 
 header {
@@ -36,22 +40,25 @@ header {
 
 header h1 {
     color: var(--tela-color);
-    font-size: 35px;
-    animation: aparece 3s ease-in-out;
+    font-size: 30px;
+    animation: aparece 3s ease-in-out forwards;
+    padding-right: 60px;
+    width: fit-content;
 }
 
 header img {
-    width: 115px;
+    width: 105px;
     animation: sumir 3s ease-in-out;
 }
 
 .creditos-p {
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.8);
     color: #fff;
     font-size: 12px;
     text-align: center;
     margin: 15px
 }
+
 
 .info {
     background: var(--info-color);
@@ -106,44 +113,7 @@ header img {
 
 
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1px;
-    padding: 10px 20px;
-    width: 100%;
-}
 
-nav a{
-    text-decoration: none;
-    display: block;
-    border: 2px outset var(--box-color);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    color: #000;
-    font-weight: bold;
-    margin: 5px;
-    animation: aparece 3s ease-in-out;
-    cursor: pointer;
-}
-
-.con-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-nav a:active {
-    transform: translateY(5px) scale(0.9);
-    box-shadow: 0 12px 6px var(--box-color);
-}
-
-nav a:hover {
-    transform: translateY(5px) scale(0.9);
-    box-shadow: 0 12px 6px var(--box-color);
-}
 
 .co {
     display: flex;
@@ -173,6 +143,107 @@ button:hover {
 .ir {
     animation: aparece 3s ease-in-out;
 }
+
+.icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    
+    position: absolute !important;
+    right: 15px !important;
+    top: 5px !important;
+    
+    z-index: 10001;
+    width: 35px;
+    height: 30px;
+}
+
+.icon span {
+    width: 30px;
+    height: 5px;
+    background: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.icon.open span {
+    background: var(--infoborder-color);
+}
+
+
+
+.menu-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 235px;
+    height: 100vh;
+    background: #1a1a1a !important;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    opacity: 1 !important;
+    transition: 0.5s ease-in-out;
+    padding-top: 100px;
+    text-align: center;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5) !important;
+    visibility: visible;
+}
+
+.menu-nav.active {
+    right: 0;
+}
+
+nav a {
+    position: relative;
+    z-index: 10000;
+    text-decoration: none;
+    color: var(--infoborder-color) !important;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px outset var(--infoborder-color);
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:active {
+    transform: translateY(5px) scale(0.9);
+    box-shadow: -3px 6px 8px var(--infoborder-color);
+}
+
+nav a:hover {
+    transform: translateY(5px) scale(0.9);
+    box-shadow: -3px 6px 8px var(--infoborder-color);
+}
+
+nav a.ativa {
+    background: var(--infoborder-color);
+    color: #000 !important;
+    transform: translateY(5px) scale(0.9);
+    box-shadow: -2px -3px 4px #00ff00;
+}
+
+.icon.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.icon.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 
 @keyframes sumir {
     0% {transform: translateX(20px); opacity: 0;}

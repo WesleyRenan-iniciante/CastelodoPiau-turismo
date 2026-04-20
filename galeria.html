@@ -10,17 +10,22 @@
 
 <body>
   
+    <div class="icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
     <header>
     <div class="header-top">
     <img src="cdp.png" alt="Brasão Castelo do Piauí" class="header-img">
     <h1>CASTELO DO PIAUÍ</h1>
     </div>
-    <div class="con-nav">
-      <nav>
-        <a href="index.html">HOME</a>
-        <a href="galeria.html">GALERIA</a>
-      </nav>
-    </div>
+       <nav id="menu-mob" class="menu-nav">
+      <a href="index.html">HOME</a>
+      <a href="galeria.html" class="ativa">GALERIA</a>
+      <a href="contato.html">CONTATO</a>
+    </nav>
   </header>
   
   <main>
@@ -34,7 +39,7 @@
     <p id="creditos" class="creditos-p"></p>
     
     
-    <p><span id="conta">1</span>/4</p>
+    <p><span id="conta"></span></p>
     </div>
     </div>
     <div class="co">

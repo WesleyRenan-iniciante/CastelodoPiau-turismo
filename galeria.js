@@ -30,7 +30,7 @@ const creditos = document.getElementById("creditos");
 
 
 function atualizarGale() {
-  const conta = document.getElementById("conta").innerText = indiceAtual + 1;
+  const conta = document.getElementById("conta").innerText = (indiceAtual + 1) + "/" + galeria.length;
   
   imagem.classList.remove("ir");
   
@@ -62,6 +62,17 @@ function voltar() {
   }
   
   atualizarGale();
+}
+
+function toggleMenu() {
+  const menu = document.getElementById("menu-mob");
+  const icon = document.querySelector(".icon");
+  const body = document.body;
+  
+  
+  menu.classList.toggle("active");
+  icon.classList.toggle("open");
+  body.classList.toggle("no-scroll");
 }
 
 atualizarGale();
