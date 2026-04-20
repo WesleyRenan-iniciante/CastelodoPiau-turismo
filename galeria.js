@@ -27,7 +27,11 @@ const titulo = document.querySelector(".info h2");
 const imagem = document.querySelector(".pontos-img");
 const creditos = document.getElementById("creditos");
 
+
+
 function atualizarGale() {
+  const conta = document.getElementById("conta").innerText = indiceAtual + 1;
+  
   imagem.classList.remove("ir");
   
   void imagem.offsetWidth;
@@ -37,6 +41,7 @@ function atualizarGale() {
   creditos.innerHTML = "CREDITOS: " + galeria[indiceAtual].creditos;
   creditos.style.fontWeight = "bold";
   imagem.classList.add("ir");
+  
 }
 
 function avancar() {
