@@ -60,29 +60,32 @@ img {
     border-radius: 3px;
     border: 2px outset var(--infoborder-color);
     width: 100%;
-    text-align: center;
+    
     min-height: 80px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: sumir 3s ease-in-out;
     flex-direction: column;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .info:active {
-    transform: translateY(6px) scale(0.85);
+    transform: translateY(6px) scale(0.95);
     box-shadow: 0 8px 14px var(--infoborder-color);
 }
 
 .info:hover {
-    transform: translateY(6px) scale(0.86);
+    transform: translateY(6px) scale(0.95);
     box-shadow: 0 8px 14px var(--infoborder-color);
 }
 
 .info h2 {
     font-size: 17px;
+    height: 60px;
+    overflow: hidden;
 }
 
 .container {
@@ -96,6 +99,7 @@ img {
 .pontos-img {
     width: 100%;
     height: 65%;
+    
 }
 
 .info-p {
